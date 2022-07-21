@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopet | Perfil</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/perfil.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="header-logo-item">
+                    <a href="#">
+                        <img src="./assets/img/Logo.svg" alt="logotipo do adopet" class="logo">
+                    </a>
+                </li>
+                <li><a href="home.html"><img src="./assets/img/Casa.svg" alt="icone da home do site"></a></li>
+                <li><a href="#"><img src="./assets/img/Mensagens.svg" alt=""></a></li>
+                <li class="user-icon__item"><a href="#"><img src="./assets/img/Usuário.svg" alt="icone de usuario" class="user-icon"></a></li>                
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+
+        <section class="banner">
+            <p class="banner__text">Esse é o perfil que aparece para responsáveis ou ONGs que recebem sua mensagem.</p>
+        </section>
+        <section class="form">
+            <form action="">
+                <label>
+                    Foto    
+                    <img src="assets/img/preview.svg" alt="foto do perfil"  class="preview-foto-perfil">
+                    <input type="file" name="" id="file"/>
+                    <span class="foto-upload">Clique na foto para editar</span>
+                </label>
+                <label>
+                    Nome
+                    <input type="text" placeholder="Digite seu nome completo">
+                </label>
+                <label>
+                    Telefone
+                    <input type="tel" placeholder="Digite seu nome completo">
+                </label>
+                <label>
+                    Cidade
+                    <input type="text" placeholder="Digite seu nome completo">
+                </label>
+                <label>
+                    Sobre
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </label>
+                <input type="submit" value="Salvar" class="btn-red">
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>2022 - Desenvolvido por Alura.</p>
+    </footer>
+</body>
+</html>

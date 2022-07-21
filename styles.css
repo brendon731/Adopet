@@ -1,0 +1,113 @@
+
+:root{
+    --bemvindo-font: 'IBM Plex Sans', sans-serif;
+    --main-font:'Poppins', sans-serif;
+    --main-blue:#3772FF;
+    --main-green:#36D6AD;
+    --main-grey:#737380;
+    --main-white-grey:#F7F7F7;
+    --color-white:#FFFFFF;
+    --main-red:#FC7071;
+
+}
+input::placeholder, textarea::placeholder{
+    color:#BCBCBC;
+}
+body{
+    font-family: var(--main-font); 
+    background-image: url("./assets/img/Forma1.svg");
+    background-repeat: no-repeat;
+}
+header{
+    padding:3em 0;
+    box-sizing:border-box;
+    display:flex;
+    align-items: center;
+    position:relative;
+    width:calc(100% - 6em);
+    margin:auto;
+}
+nav ul{
+    display:flex;
+    align-items: center;
+}
+nav li{
+    padding-right:3em;
+
+}
+.user-icon__item{
+    position:absolute;
+    padding-right:0;
+    right:0;
+}
+.banner__logo{
+    display:block;
+    margin:8vh auto 1em;
+    width:150px;
+}
+.banner__text{
+    color:var(--main-blue);
+    text-align: center;
+    line-height:21px; 
+    margin:auto;
+    font-weight: 400;
+    width:70%;
+
+}
+.container{
+    background: url("./assets/img/Forma2.svg") no-repeat right;
+    background-size: contain;
+}
+.btn-red{
+    font-family: var(--main-font);
+    color:var(--color-white);
+    background-color:#FC7071;
+    font-size: 16px;
+    border-radius: 6px;
+    padding:.5em 2em;
+    min-width:150px;
+    max-width:400px;
+}
+footer{
+    display:block;
+    
+}
+footer p{
+    background-color:var(--main-green);
+    color:var(--color-white);
+    padding:3em 0;
+    text-align: center;
+    font-weight: 400;
+}
+.header-logo-item{
+    display:none;
+}
+@media screen and (min-width:768px){
+    .header-logo-item{
+        display:inline-block;
+    }
+    body{
+        background-size: 500px;
+    }
+    header{
+        display:flex;
+        align-items: center;
+    }
+    header .logo{
+        width:125px;
+    }
+    .banner__logo{
+        width:220px;
+    }
+}
+@media screen and (min-width:1440px){
+    header{
+        width:calc(100% - 15em);
+
+    }
+    input[type="password"]{
+        width:350px;
+        margin:auto;
+    }
+    
+}

@@ -1,0 +1,70 @@
+.banner__text{
+    margin:2em auto;
+}
+.card-container{
+    padding:0 1em;
+    display:grid;
+    grid-template-columns: 1fr;
+    gap:1em;
+
+}
+.card{
+    display:flex;
+    padding:1.5em;
+    background-color: var(--main-white-grey);
+}
+.card__infos{
+    color:var(--main-grey);
+    padding-left:1em;
+    display:flex;
+    flex-direction: column;
+}
+.card__title{
+    font-size: 16px;
+    font-weight: 600;
+    color:var(--main-blue);
+    margin-bottom:.5em;
+}
+
+.card__description{
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom:auto;
+}
+.card__place{
+    font-size:12px;
+    margin-bottom:.5em;
+}
+.card__contact{
+    font-size: 10px;
+}
+.card__contact:before{
+    content:"";
+    vertical-align: middle;
+    margin-right:5px;
+    display:inline-block;
+    background: url("../img/ícone-mensagem.svg") no-repeat;
+    height:18px;
+    width:18px;
+
+}
+@media screen and (min-width:768px){
+    .banner__text{
+        margin:7em auto 2em;
+    }
+    .card-container{
+        padding:1em;
+        grid-template-columns: 1fr 1fr; 
+
+    }
+}
+@media screen and (min-width:1440px){
+    .banner__text{
+        margin:5em auto 2em;
+    }
+    .card-container{
+        grid-template-columns: 1fr 1fr 1fr;
+        padding:1em 7.5em; 
+
+    }
+}

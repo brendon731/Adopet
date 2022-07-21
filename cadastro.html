@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/cadastro.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+
+    <title>Adopet | Cadastrar</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="header-logo-item">
+                    <a href="#">
+                        <img src="./assets/img/Logo.svg" alt="logotipo do adopet" class="logo">
+                    </a>
+                </li>
+                <li><a href="#"><img src="./assets/img/Casa.svg" alt=""></a></li>
+                <li><a href="#"><img src="./assets/img/Mensagens.svg" alt=""></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+
+    <section class="banner">
+        <img src="./assets/img/Logo-azul.svg" alt="logotipo do adopet" class="banner__logo">
+        <p class="banner__text">Ainda não tem cadastro?</p>
+        <p class="banner__text">Então, antes de buscar seu melhor amigo, precisamos de alguns dados:</p>
+    </section>
+    <section class="form">
+        <form action="/index.html">
+            <label>
+                Email
+                <input type="email" placeholder="Escolha seu melhor email" data-type="email" required>
+                <span class="invalid-field"></span>
+            </label>
+            <label>
+                Nome
+                <input type="text" placeholder="Digite seu nome completo" data-type="name" required>
+                <span class="invalid-field"></span>
+            </label>
+            <label>
+                Senha
+                <input type="password" placeholder="Crie sua senha" data-type="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[$*&@#])[0-9a-zA-Z$*&@#]{8,}$" required>
+                <span class="invalid-field"></span>
+            </label>
+            <label>
+                Confirme sua senha
+                <input type="password" placeholder="Repita a senha criada acima" data-type="confirmPassword" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[$*&@#])[0-9a-zA-Z$*&@#]{8,}$" required>
+                <span class="invalid-field"></span>
+            </label>
+            <input type="submit" value="Cadastrar" class="submit btn-red"> 
+        </form>
+    </section>
+</div>
+
+    <footer>
+        <p>2022 - Desenvolvido por Alura.</p>
+    </footer>
+
+    <script src="./assets/js/app.js" type="module"></script>
+</body>
+</html>
